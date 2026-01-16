@@ -1,0 +1,12 @@
+Jan 16, 2026 9:57:01 AM org.opengauss.core.v3.ConnectionFactoryImpl openConnectionImpl
+INFO: [72b4ece6-aee5-4324-aee6-40636078efba] Try to connect. IP: 127.0.0.1:26000
+Jan 16, 2026 9:57:01 AM org.opengauss.core.v3.ConnectionFactoryImpl openConnectionImpl
+INFO: [127.0.0.1:34580/127.0.0.1:26000] Connection is established. ID: 72b4ece6-aee5-4324-aee6-40636078efba
+Jan 16, 2026 9:57:01 AM org.opengauss.core.v3.ConnectionFactoryImpl openConnectionImpl
+INFO: Connect complete. ID: 72b4ece6-aee5-4324-aee6-40636078efba
+✅ 查询结果：
+ID	Name			URL
+1	openGauss		https://opengauss.org/zh/
+2	华为云		https://www.huaweicloud.com/
+3	校园一卡通官网		https://campus-card.edu/
+4	高校信息化中心		https://info.edu.cn/
