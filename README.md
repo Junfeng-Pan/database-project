@@ -62,6 +62,18 @@ su - omm -c "gsql -d campus_card -p 26000 -f /tmp/sql/03_insert_data.sql"
 3.  **完整性约束**：通过脚本补充了金额非负约束和外键关联，保证数据质量。
 4.  **安全性**：创建了专用业务用户 `card_user` 并实施最小权限控制。
 
+每个脚本对应大作业中的实验如下
+
+|脚本|实验|
+|-|-|
+|01_create_database.sql|1.4.4 创建数据库表|
+|lab_add_constraints.sql|添加外键约束等其他约束|
+|lab_1.4.5_queries.sql|1.4.5 模拟场景，对表中的数据进行查询操作|
+|lab_1.4.6_objects.sql|1.4.6 创建视图和索引|
+|lab_1.4.7_data_mod.sql|1.4.7 数据修改和删除|
+|lab_1.4.8_security.sql|1.4.8 创建新用户|
+
+
 ### 4.3 应用开发 (Java JDBC)
 我们编写了 Java 程序验证数据库的连通性。
 
@@ -71,7 +83,7 @@ javac -cp opengauss-jdbc-3.0.0.jar OpenGaussJDBCExample.java
 java -cp .:opengauss-jdbc-3.0.0.jar OpenGaussJDBCExample
 ```
 
-**运行结果截图**：
+**运行结果**：
 ```text
 Jan 16, 2026 9:57:01 AM org.opengauss.core.v3.ConnectionFactoryImpl openConnectionImpl
 INFO: [127.0.0.1:34580/127.0.0.1:26000] Connection is established. ID: 72b4ece6-aee5-4324-aee6-40636078efba
